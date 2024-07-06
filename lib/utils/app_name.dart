@@ -10,18 +10,18 @@ class AppName extends StatelessWidget {
   Widget build(BuildContext context) {
     return RichText(
       text: TextSpan(
-        text: 'E Waste', //first part
+        text: 'E', //first part
         style: TextStyle(
             fontFamily: 'Poppins',
             fontSize: fontSize,
             fontWeight: FontWeight.w900,
             color: Colors.grey[800]),
-        // children: <TextSpan>[
-        //   TextSpan(
-        //       text: 'Waste', //second part
-        //       style:
-        //           TextStyle(fontFamily: 'Poppins', color: Colors.orangeAccent)),
-        // ],
+        children: <TextSpan>[
+          TextSpan(
+              text: 'Shop', //second part
+              style:
+                  TextStyle(fontFamily: 'Poppins', color: Colors.orangeAccent)),
+        ],
       ),
     );
   }

@@ -88,11 +88,11 @@ class _Settingscreenstate extends State<ProfileTab>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'E Waste',
+                          'My E-Shop',
                           style: TextStyle(
                               fontSize: 15,
                               fontWeight: FontWeight.w700,
-                              letterSpacing: -0.7,
+                              letterSpacing: 0,
                               wordSpacing: 1),
                         ),
                         SizedBox(height: 15),

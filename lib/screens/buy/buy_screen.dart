@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, unused_field
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:e_waste/adjust_map.dart';

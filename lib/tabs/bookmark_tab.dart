@@ -123,7 +123,7 @@ class _BookMarkTabState extends State<BookMarkTab>
                     return const EmptyPageWithImage(
                       image: Config.bookmarkImage,
                       title: 'Bookmark is Empty',
-                      description: 'Save Your Favourite E-Waste Here',
+                      description: 'Save Your Favourite Products Here',
                     );
                   }
 

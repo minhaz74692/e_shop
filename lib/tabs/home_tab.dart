@@ -8,10 +8,10 @@ import 'package:e_waste/models/user_model.dart';
 import 'package:e_waste/providers/e_waste_provider.dart';
 import 'package:e_waste/providers/user_provider.dart';
 import 'package:e_waste/screens/home/widgets/category_section.dart';
-import 'package:e_waste/services/bookmark_service.dart';
+// import 'package:e_waste/services/bookmark_service.dart';
 import 'package:e_waste/widgets/loading_widget.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:provider/provider.dart';
 import 'package:e_waste/utils/app_name.dart';
 import 'package:e_waste/widgets/drawer.dart';
@@ -84,7 +84,7 @@ class _HomeTabState extends State<HomeTab> {
   @override
   Widget build(BuildContext context) {
     var eWasteProvider = context.watch<EWasteProvider>();
-    var up = context.watch<UserProvider>();
+    // var up = context.watch<UserProvider>();
 
     print(productList);
     return Scaffold(
@@ -168,7 +168,7 @@ class _HomeTabState extends State<HomeTab> {
                       child: Text(
                         eWasteProvider.categoryClicked
                             ? '${eWasteProvider.categoryList[eWasteProvider.activeCategory].name}s'
-                            : 'Explore E-Waste',
+                            : 'Explore Products',
                         style: headline3.copyWith(
                           fontSize: 18,
                           fontWeight: FontWeight.w600,

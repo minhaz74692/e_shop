@@ -1,5 +1,4 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:e_waste/constants/app_constants.dart';
 import 'package:e_waste/constants/text_style.dart';
 import 'package:e_waste/providers/e_waste_provider.dart';
 import 'package:flutter/material.dart';
@@ -13,7 +12,7 @@ class CategorySection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var eWasteProvider = context.watch<EWasteProvider>();
-    return Container(
+    return SizedBox(
       // alignment: Alignment.center,
       // padding: EdgeInsets.symmetric(horizontal: 20),
       height: 90,

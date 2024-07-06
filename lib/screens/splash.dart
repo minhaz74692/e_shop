@@ -8,7 +8,7 @@ import 'package:e_waste/screens/login.dart';
 import 'package:e_waste/utils/nextscreen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+// import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -20,9 +20,9 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   Future _afterSplash() async {
     final UserProvider ub = context.read<UserProvider>();
-    SharedPreferences sp = await SharedPreferences.getInstance();
+    // SharedPreferences sp = await SharedPreferences.getInstance();
     final eWasteProvider = context.read<EWasteProvider>();
-    bool? isSignedIn = sp.getBool('signed_in');
+    // bool? isSignedIn = sp.getBool('signed_in');
     // final configs = context.read<ConfigBloc>().configs!;
     Future.delayed(const Duration(milliseconds: 1500)).then((value) async {
       eWasteProvider.getLocation();
@@ -59,14 +59,14 @@ class _SplashPageState extends State<SplashPage> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image(
-            height: 150,
-            width: 150,
+            height: 250,
+            width: 250,
             image: AssetImage(AssetImages.instance.splash),
           ),
-          Text(
-            'E Waste',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
-          ),
+          // Text(
+          //   'EShop',
+          //   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+          // ),
         ],
       )),
     );
